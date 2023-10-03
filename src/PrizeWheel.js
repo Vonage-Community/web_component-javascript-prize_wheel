@@ -1,47 +1,51 @@
 import { html, css, LitElement, svg } from 'lit';
 
 export class PrizeWheel extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      padding: 25px;
-      color: var(--prize-wheel-text-color, #000);
-    }
-    * {
-      font-size: 100%;
-    }
+  static get styles() {
+    return css`
+      :host {
+        display: block;
+        padding: 25px;
+        color: var(--prize-wheel-text-color, #000);
+      }
+      * {
+        font-size: 100%;
+      }
 
-   svg {
-      width: 100%;
-      height: 100%;
-    }
+    svg {
+        width: 100%;
+        height: 100%;
+      }
 
-    circle {
-      fill: none;
-      stroke-width: 32;
-    }
+      circle {
+        fill: none;
+        stroke-width: 32;
+      }
 
-    svg text {
-      dominant-baseline: middle;
-      text-anchor: start;
-    }
-  `;
+      svg text {
+        dominant-baseline: middle;
+        text-anchor: start;
+      }
+    `;
+  }
 
-  static properties = {
-    colors: { type: Array },
-    panels: { type: Array },
-    spun: {type: Boolean},
-    keyframes: {type: String},
-    transformations: {type: String},
-    keyTimes: { type: String },
-    animateValues: { type: String },
-    offset: { type: Number },
-    vmin: { type: Number },
-    vmax: { type: Number },
-    amin: { type: Number },
-    amax: { type: Number },
-    fontsize: { type: String },
-  };
+  static get properties() {
+    return {
+      colors: { type: Array },
+      panels: { type: Array },
+      spun: {type: Boolean},
+      keyframes: {type: String},
+      transformations: {type: String},
+      keyTimes: { type: String },
+      animateValues: { type: String },
+      offset: { type: Number },
+      vmin: { type: Number },
+      vmax: { type: Number },
+      amin: { type: Number },
+      amax: { type: Number },
+      fontsize: { type: String },
+    };
+  }
 
   constructor() {
     super();
