@@ -65,13 +65,13 @@ export class PrizeWheel extends LitElement {
     this.amax = -.1;
     this.amin = -.5;
     this.fontsize = "calc(0.05vw + 1px)";
+    this.deg;
+    this.rad;
+    this.noRuns = 0;
+    this.timeoutID;
+    this.t;
+  
   }
-
-  deg;
-  rad;
-  noRuns = 0;
-  timeoutID;
-  t;
 
   spin() {
     this.t = "";
