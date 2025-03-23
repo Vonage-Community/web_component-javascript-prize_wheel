@@ -24,7 +24,7 @@ npm i @vonage/prize-wheel
 
 ### OR using a CDN
 ```html
-<script type="module" src="https://unpkg.com/@vonage/prize-wheel@latest/prize-wheel.js?module"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@vonage/prize-wheel@latest/prize-wheel.js/+esm"></script>
 
 ```
 
